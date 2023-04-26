@@ -76,6 +76,26 @@ export const store = reactive({
         ],
       },
     },
+    carusel: {
+      activeOne: "Urban",
+      assets: {
+        Crust: {
+          name: "Crust",
+          backText: "/img/h3-rev-img-1.png",
+          pizzaImg: "/img/h3-rev-img-2.png",
+        },
+        Taste: {
+          name: "Taste",
+          backText: "/img/h3-rev-img-3.png",
+          pizzaImg: "/img/h3-rev-img-4.png",
+        },
+        Urban: {
+          name: "Urban",
+          backText: "/img/h3-rev-img-5.png",
+          pizzaImg: "/img/h3-rev-img-6.png",
+        },
+      },
+    },
   },
   main: {},
 });

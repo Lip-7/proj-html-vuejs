@@ -36,11 +36,13 @@
                 </div>
             </div>
         </div>
+        <HeaderCaruselComponent/>
     </header>
 </template>
   
 <script>
-import {store} from '../store/store.js'
+import { store } from '../store/store.js'
+import HeaderCaruselComponent from './FooterInnerComponents/HeaderCaruselComponent.vue';
 import NavbarLink from './FooterInnerComponents/NavbarLink.vue';
 export default {
     name: 'HeaderComponent',
@@ -54,6 +56,7 @@ export default {
     },
     components: {
         NavbarLink,
+        HeaderCaruselComponent,
     },
     mounted() {
     }
