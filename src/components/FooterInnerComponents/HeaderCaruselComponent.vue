@@ -71,7 +71,7 @@ export default {
         border-radius: 50%;
         background-color: white;
         color: $textRed;
-        top: 35%;
+        top: 30%;
         cursor: pointer;
         span {
             position: absolute;
@@ -81,11 +81,11 @@ export default {
         }
     }
     .prevButton{
-        left: -60px;
+        left: -65px;
         rotate: 90deg;
     }
     .nextButton{
-        right: -60px;
+        right: -65px;
         rotate: -90deg;
 
     }
