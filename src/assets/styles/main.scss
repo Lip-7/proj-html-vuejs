@@ -4,7 +4,6 @@ $fa-font-path: "./webfonts";
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import 'bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 *{
@@ -73,6 +72,13 @@ a{
     }
     100%{
         scale:.8
+    }   
+}
+@keyframes arriveFromBottom {
+    from{
+        transform: translateY(30px);
     }
-    
+    to{
+        transform: translateY(0px);
+    }
 }

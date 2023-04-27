@@ -1,7 +1,7 @@
 <template>
-    <row class="wrapper d-flex justify-content-between gx-2 my-2">
+    <div class="wrapper row d-flex justify-content-between gx-2 my-2">
         <SingleImage v-for="imag in store.main.galleryInfo" :image="imag"/>
-    </row>
+    </div>
 </template>
   
 <script>

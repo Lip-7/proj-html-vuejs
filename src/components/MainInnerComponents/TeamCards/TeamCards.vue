@@ -29,6 +29,6 @@ export default {
   
 <style lang="scss" scoped>
 .row{
-    --bs-gutter-x: .10rem;
+    --bs-gutter-x: .05rem;
 }
 </style>

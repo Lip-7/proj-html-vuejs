@@ -140,8 +140,8 @@ export const store = reactive({
         }
       },
       {
-        name: "Nicoola o' Puorc",
-        img: '/img/h1-team-3a.jpg',
+        name: "Nicola o' Puorc",
+        img: '/img/h1-team-4a.jpg',
         role: 'Executive Chef',
         socials: {
           instagram: '#',
@@ -151,7 +151,7 @@ export const store = reactive({
       },
       {
         name: "Carol Simpson",
-        img: '/img/h1-team-4a.jpg',
+        img: '/img/h1-team-3a.jpg',
         role: 'Executive Chef',
         socials: {
           instagram: '#',
