@@ -1,7 +1,10 @@
 <template>
-    <div class="wrap col-12 col-sm-6 col-lg-3 p-0">
+    <div class="wrap col-12 col-sm-6 col-lg-3 p-0 position-relative">
         <div class="image w-100">
             <img :src="singleMember.img" alt="">
+        </div>
+        <div class="onHover">
+
         </div>
     </div>
 </template>

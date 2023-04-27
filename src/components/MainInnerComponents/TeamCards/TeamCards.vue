@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row w-100">
         <SingleCard v-for="member in store.main.teamCards" :single-member="member"/>
     </div>
 </template>
@@ -28,5 +28,7 @@ export default {
 </script>
   
 <style lang="scss" scoped>
-
+.row{
+    --bs-gutter-x: .10rem;
+}
 </style>

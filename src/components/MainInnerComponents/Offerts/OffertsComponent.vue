@@ -1,5 +1,5 @@
 <template>
-    <div class="wrap d-flex row">
+    <div class="wrap d-flex row w-100">
         <div class="image col-12 col-lg-6 position-relative">
             <img class="over" src="/img/h1-img-7n.png" alt="Don Peppe Pizza Specials">
             <img class="back" src="/img/h1-img-4.jpg" alt="Don Peppe Clients">
