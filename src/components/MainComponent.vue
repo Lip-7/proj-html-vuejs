@@ -3,6 +3,7 @@
         <GalleryInfo/>
         <CaruselPosts/>
         <OffertsComponent/>
+        <ParallaxBanner/>
     </main>
 </template>
   
@@ -10,6 +11,7 @@
 import CaruselPosts from './MainInnerComponents/JourneyPosts/CaruselPosts.vue';
 import GalleryInfo from './MainInnerComponents/GalleryInfoimages/GalleryInfo.vue';
 import OffertsComponent from './MainInnerComponents/Offerts/OffertsComponent.vue'
+import ParallaxBanner from './MainInnerComponents/ParallaxBanner/ParallaxBanner.vue';
 export default {
     name: 'MainComponent',
     data() {
@@ -24,6 +26,7 @@ export default {
         GalleryInfo,
         CaruselPosts,
         OffertsComponent,
+        ParallaxBanner,
     },
     mounted() {
 
