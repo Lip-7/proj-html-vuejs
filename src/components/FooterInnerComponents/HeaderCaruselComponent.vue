@@ -6,12 +6,12 @@
         <div class="pizzaImg">
             <img :src="activeOne.pizzaImg" alt="Peppe's Pizzas">
         </div>
-        <div class="prevButton position-relative">
+       <!--  <div class="prevButton position-relative">
             <span>Prev</span>
         </div>
         <div class="nextButton position-absolute">
             <span>Next</span>
-        </div>
+        </div> -->
     </div>
 </template>
   

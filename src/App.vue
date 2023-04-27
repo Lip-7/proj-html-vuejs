@@ -1,6 +1,7 @@
 <template>
   <HeaderComponent/>
-
+  <h1>Main</h1>
+  <FooterComponent/>
 </template>
 
 <script>

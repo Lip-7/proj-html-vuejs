@@ -98,4 +98,28 @@ export const store = reactive({
     },
   },
   main: {},
+  footer: {
+    locals: [
+      {
+        address: '1614 E. Bell Rd #104',
+        city: 'Salerno, AZ 85022',
+        number: '(602) 867-1010'
+      },
+      {
+        address: '204 E. Pizzetta Tommaso',
+        city: 'Sorrento, AZ 85022',
+        number: '(358) 867-1010'
+      },
+      {
+        address: 'Vale Puglia 54',
+        city: 'Torre Del Greco AZ 85022',
+        number: '(359) 867-1010'
+      },
+      {
+        address: 'Corso Itali AA',
+        city: 'Naples, AZ 85022',
+        number: '(989) 867-1010'
+      }
+    ],
+  }
 });
