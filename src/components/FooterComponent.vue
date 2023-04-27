@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="rightSide w-50">
-                <img src="/img/footer-img-1.jpg" alt="">
+                <img class="w-100" src="/img/footer-img-1.jpg" alt="">
             </div>
         </div>
     </footer>

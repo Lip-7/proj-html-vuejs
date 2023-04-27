@@ -190,6 +190,7 @@ export const store = reactive({
 /* cose da fare quando avrò tempo:
 carosello posts del main
 impostare nell'header i cambi si pizza al click
+fixare la parte degli eventi
 aggiungere la scritta che scende nel ParallaxBanner
 
 */
