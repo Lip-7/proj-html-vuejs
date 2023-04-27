@@ -6,6 +6,7 @@
         <ParallaxBanner/>
         <TeamCards/>
         <Client/>
+        <PizzaMenu/>
         <Events/>
         <Prenotations/>
     </main>
@@ -18,6 +19,7 @@ import OffertsComponent from './MainInnerComponents/Offerts/OffertsComponent.vue
 import ParallaxBanner from './MainInnerComponents/ParallaxBanner/ParallaxBanner.vue';
 import TeamCards from './MainInnerComponents/TeamCards/TeamCards.vue';
 import Client from './MainInnerComponents/Clients/Client.vue';
+import PizzaMenu from './MainInnerComponents/PizzaMenu/PizzaMenu.vue';
 import Events from './MainInnerComponents/Events/Events.vue';
 import Prenotations from './MainInnerComponents/Prenotations/Prenotations.vue';
 export default {
@@ -37,6 +39,7 @@ export default {
         ParallaxBanner,
         TeamCards,
         Events,
+        PizzaMenu,
         Prenotations,
         Client,
     },
