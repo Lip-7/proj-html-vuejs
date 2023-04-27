@@ -1,12 +1,14 @@
 <template>
-    <main>
-
-    </main>
+    <ul class="my-4">
+        <li><a href="#">{{ local.address }}</a> </li>
+        <li><a href="#">{{ local.city }}</a> </li>
+        <li><a href="#">{{ local.number }}</a> </li>
+    </ul>
 </template>
   
 <script>
 export default {
-    name: 'MainComponent',
+    name: 'LocationComponent',
     data() {
         return {
 
@@ -15,6 +17,7 @@ export default {
     methods: {
 
     },
+    props:['local'],
     components: {
 
     },
@@ -24,4 +27,18 @@ export default {
 }
 </script>
   
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../../assets/styles/partials/variables' as *;
+ul{
+    font-family: 'Open sans', sans-serif;
+    li{
+        a{
+            color: $textVeryLightGrey;
+            transition: all .5s;
+            &:hover{
+                color: $textDarkGold;
+            }
+        }
+    }
+}
+</style>
