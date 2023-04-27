@@ -6,6 +6,7 @@
         <ParallaxBanner/>
         <TeamCards/>
         <Events/>
+        <Prenotations/>
     </main>
 </template>
   
@@ -16,6 +17,7 @@ import OffertsComponent from './MainInnerComponents/Offerts/OffertsComponent.vue
 import ParallaxBanner from './MainInnerComponents/ParallaxBanner/ParallaxBanner.vue';
 import TeamCards from './MainInnerComponents/TeamCards/TeamCards.vue';
 import Events from './MainInnerComponents/Events/Events.vue';
+import Prenotations from './MainInnerComponents/Prenotations/Prenotations.vue';
 export default {
     name: 'MainComponent',
     data() {
@@ -33,6 +35,7 @@ export default {
         ParallaxBanner,
         TeamCards,
         Events,
+        Prenotations,
     },
     mounted() {
 
