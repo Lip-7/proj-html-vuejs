@@ -160,6 +160,28 @@ export const store = reactive({
         }
       },
     ],
+    clients: [
+      {
+        img: '/img/h1-clients-img-1.png',
+        name: 'Big Cheese'
+      },
+      {
+        img: '/img/h1-clients-img-2.png',
+        name: 'Bludoos Bar'
+      },
+      {
+        img: '/img/h1-clients-img-3.png',
+        name: 'Vegan'
+      },
+      {
+        img: '/img/h1-clients-img-4.png',
+        name: 'Cowboy'
+      },
+      {
+        img: '/img/h1-clients-img-5.png',
+        name: 'Gordon Resturant'
+      },
+    ],
   },
   footer: {
     locals: [
@@ -189,6 +211,8 @@ export const store = reactive({
 
 /* cose da fare quando avrò tempo:
 carosello posts del main
+carosello Clients
+carosello pizze
 impostare nell'header i cambi si pizza al click
 fixare la parte degli eventi
 aggiungere la scritta che scende nel ParallaxBanner
