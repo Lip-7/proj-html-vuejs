@@ -1,6 +1,6 @@
 <template>
   <HeaderComponent/>
-  <h1>Main</h1>
+  <MainComponent/>
   <FooterComponent/>
 </template>
 

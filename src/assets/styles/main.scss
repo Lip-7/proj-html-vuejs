@@ -30,3 +30,49 @@ a{
         color: $textWhite;
     }
 }
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes growup {
+    from{
+        scale: .7;
+    }
+    to{
+        scale: 1;
+    }
+}
+@keyframes fromTop {
+    from{
+        transform: translateY(-10%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes beat {
+    0%{
+        scale: 1
+    }    
+    25%{
+        scale: 1.2
+    }
+    50%{
+        scale: .8
+    }
+    75%{
+        scale: 1.2
+    }
+    85%{
+        scale: 1
+    }
+    100%{
+        scale:.8
+    }
+    
+}

@@ -1,11 +1,8 @@
 <template>
-    <main>
-        <GalleryInfo/>
-    </main>
+ 
 </template>
   
 <script>
-import GalleryInfo from './MainInnerComponents/GalleryInfoimages/GalleryInfo.vue';
 export default {
     name: 'MainComponent',
     data() {
@@ -16,8 +13,9 @@ export default {
     methods: {
 
     },
+    props:[],
     components: {
-        GalleryInfo,
+
     },
     mounted() {
 
@@ -25,4 +23,6 @@ export default {
 }
 </script>
   
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

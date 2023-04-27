@@ -97,7 +97,28 @@ export const store = reactive({
       },
     },
   },
-  main: {},
+  main: {
+    galleryInfo: [
+      {
+        img: '/img/h3-img-1.jpg',
+        title: 'Don Peppe Location'
+      },
+      {
+        img: '/img/h3-img-2.jpg',
+        title: 'Don Peppe Event'
+
+      },
+      {
+        img: '/img/h3-img-3.jpg',
+        title: 'Young Don Peppe'
+
+      },
+      {
+        img: '/img/h3-img-4.jpg',
+        title: 'Don Peppe Event'
+      },
+    ],
+  },
   footer: {
     locals: [
       {

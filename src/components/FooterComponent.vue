@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="wrapper d-flex w-100">
-            <div class="leftSide w-50 d-flex justify-content-between position-relative">
+            <div class="leftSide w-50 d-flex justify-content-between position-relative flex-wrap">
                 <div class="locals">
                     <h5>Find our restaurants</h5>
                     <LocationComponent v-for="line in store.footer.locals" :local="line"/>
@@ -76,7 +76,6 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 .wrapper{
-    height: 720px;
     overflow: hidden;
     color: $textVeryLightGrey;
     .leftSide{
