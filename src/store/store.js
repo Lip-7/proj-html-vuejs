@@ -118,6 +118,48 @@ export const store = reactive({
         title: 'Don Peppe Event'
       },
     ],
+    teamCards: [
+      {
+        name: "Pascal o' spuorc",
+        img: '/img/h1-team-1a-700x700.jpg',
+        role: 'Head Chef',
+        socials: {
+          instagram: '#',
+          twitter: '#',
+          facebook: '#',
+        }
+      },
+      {
+        name: "Sharon Hayes",
+        img: '/img/h1-team-2a.jpg',
+        role: 'Executive Chef',
+        socials: {
+          instagram: '#',
+          twitter: '#',
+          facebook: '#',
+        }
+      },
+      {
+        name: "Nicoola o' Puorc",
+        img: '/img/h1-team-3a.jpg',
+        role: 'Executive Chef',
+        socials: {
+          instagram: '#',
+          twitter: '#',
+          facebook: '#',
+        }
+      },
+      {
+        name: "Carol Simpson",
+        img: '/img/h1-team-4a.jpg',
+        role: 'Executive Chef',
+        socials: {
+          instagram: '#',
+          twitter: '#',
+          facebook: '#',
+        }
+      },
+    ],
   },
   footer: {
     locals: [
@@ -144,3 +186,10 @@ export const store = reactive({
     ],
   }
 });
+
+/* cose da fare quando avrò tempo:
+carosello posts del main
+impostare nell'header i cambi si pizza al click
+aggiungere la scritta che scende nel ParallaxBanner
+
+*/
