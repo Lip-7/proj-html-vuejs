@@ -41,7 +41,7 @@
                     <p>© 2020 <span>Lip</span></p>
                 </div>
                 <div class="certificate">
-                    <a href="#"><img src="../../public/img/footer-bottom-img.png" alt=""></a>
+                    <a href="#"><img src="/img/footer-bottom-img.png" alt=""></a>
                 </div>
             </div>
             <div class="rightSide w-50">
