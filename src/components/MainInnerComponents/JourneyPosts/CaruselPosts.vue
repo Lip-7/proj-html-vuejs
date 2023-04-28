@@ -4,10 +4,27 @@
             <div class="innerCont w-75 d-flex flex-nowrap overflow-auto">
                 <div class="singlePost w-100 text-center position-relative">
                     <span class="apice d-block">“</span>
-                    <p class="mt-3">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza
-                        slice in naples”</p>
-                    <span class="text-uppercase">washington post 2018</span>
+                    <swiper-container loop="true" reverse="true" pagination-el=".swiper-pagination">
+                        <swiper-slide>
+                            <p class="mt-3">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza
+                                slice in naples”</p>
+                            <span class="text-uppercase">washington post 2018</span>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <p class="mt-3">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza
+                                slice in naples”</p>
+                            <span class="text-uppercase">washington post 2018</span>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <p class="mt-3">“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza
+                                slice in naples”</p>
+                            <span class="text-uppercase">washington post 2018</span>
+                        </swiper-slide>
+                        <div class="d-flex justify-content-center">
+                        </div>
+                    </swiper-container>
                     <div class="dots d-flex">
+                        <div class="swiper-pagination"></div>
                         
                     </div>
                 </div>
@@ -17,6 +34,7 @@
 </template>
   
 <script>
+import { register } from 'swiper/element/bundle';
 export default {
     name: 'MainComponent',
     data() {
@@ -32,14 +50,16 @@ export default {
 
     },
     mounted() {
-
+        register();
     }
 }
 </script>
   
 <style lang="scss" scoped>
 @use '../../../assets/styles/partials/variables' as *;
-
+:root{
+    --swiper-theme-color: $textGold;
+}
 .wrap {
     background-color: $bgVeryVeryLightGrey;
 
@@ -59,7 +79,7 @@ export default {
                     color: $textGold;
                     font-size: 192px;
                     height: 135px;
-
+                    padding-left: 47px;
                 }
 
                 p {
@@ -74,9 +94,8 @@ export default {
                     font-weight: 500;
                     color: $textRed;
                 }
-
-                .dots {
-                    
+                swiper-slide{
+                    cursor: pointer;
                 }
             }
         }

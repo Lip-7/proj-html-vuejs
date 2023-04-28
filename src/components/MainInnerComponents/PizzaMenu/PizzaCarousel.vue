@@ -8,7 +8,7 @@
   
 <script>
 import { register } from 'swiper/element/bundle';
-import { Swiper, SwiperSlide } from 'swiper/vue';
+/* import { Swiper, SwiperSlide } from 'swiper/vue'; */
 import { store } from '../../../store/store';
 import SinglePizza from './SinglePizza.vue';
 export default {
