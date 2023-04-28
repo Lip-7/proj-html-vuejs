@@ -1,10 +1,10 @@
 <template>
     <div class="wrap w-100 position-relative overflow-hidden">
-        <div class="backText">
-            <img :src="activeOne.backText" alt="Peppe's Pizzas">
+        <div class="backText" ref="backWrap">
+            <img :src="activeOne.backText" alt="Peppe's Pizzas" ref="backImg">
         </div>
-        <div class="pizzaImg">
-            <img :src="activeOne.pizzaImg" alt="Peppe's Pizzas">
+        <div class="pizzaImg" ref="pizzaWrap">
+            <img :src="activeOne.pizzaImg" alt="Peppe's Pizzas" ref="pizzaImg">
         </div>
         <div @click="changePizza('prev')" class="prevButton position-relative">
             <span>Prev</span>
@@ -43,7 +43,17 @@ export default {
                     newToView = this.pizzasList[actualIndex - 1];
                 }
             }
+            this.$refs.backWrap.removeAttribute('style')
+            this.$refs.backImg.removeAttribute('style')
+            this.$refs.pizzaWrap.removeAttribute('style')
+            this.$refs.pizzaImg.removeAttribute('style')
             this.toView = newToView;
+            setTimeout(() => {
+                this.$refs.backWrap.style.animation = 'fadein .6s linear'
+                this.$refs.backImg.style.animation = 'growup .3s linear'
+                this.$refs.pizzaWrap.style.animation = 'fadein .6s linear .3s forwards'
+                this.$refs.pizzaImg.style.animation = 'fromTop .3s linear .3s'
+            }, 50);
         }
     },
     components: {
