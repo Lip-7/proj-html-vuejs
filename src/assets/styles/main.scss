@@ -82,3 +82,11 @@ a{
         transform: translateY(0px);
     }
 }
+@keyframes goDown {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(200px);
+    }
+}
