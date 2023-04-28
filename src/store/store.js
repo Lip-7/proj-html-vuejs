@@ -182,6 +182,39 @@ export const store = reactive({
         name: 'Gordon Resturant'
       },
     ],
+    pizzas: [
+      {
+        name: 'Bismarck',
+        price: '$35.00',
+        img: '/img/h3-product-img-1a-100x100.png',
+      },
+      {
+        name: 'Fiori di zucca',
+        price: '$7.00 - $50.00',
+        img: '/img/h3-product-img-2a-150x150.png',
+      },
+      {
+        name: 'Valdostana',
+        price: '$55.00',
+        img: '/img/h3-product-img-3a-150x150.png',
+      },
+      {
+        name: 'Pizza tartufata',
+        price: '$45.00',
+        img: '/img/h3-product-img-4a-150x150.png',
+      },
+      {
+        name: 'Francescana',
+        price: '$25.00',
+        img: '/img/h3-product-img-5a-150x150.png',
+      },
+      {
+        name: 'Campagnola',
+        price: '$50.00 - $95.00',
+        img: '/img/h3-product-img-6a-100x100.png',
+      },
+
+    ],
   },
   footer: {
     locals: [
