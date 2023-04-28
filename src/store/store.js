@@ -243,7 +243,6 @@ export const store = reactive({
         price: '$50.00 - $95.00',
         img: '/img/h3-product-img-6a-100x100.png',
       },
-
     ],
   },
   footer: {

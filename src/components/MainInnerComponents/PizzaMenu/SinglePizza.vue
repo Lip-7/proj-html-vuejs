@@ -1,5 +1,5 @@
 <template>
-    <div class="wrap text-center">
+    <div class="wrap text-center d-flex flex-column align-items-center">
         <div class="imgWrap">
             <img draggable="false" class=" w-100" :src="pizza.img" :alt="pizza.name">
         </div>
