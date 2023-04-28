@@ -57,9 +57,6 @@ export default {
   
 <style lang="scss" scoped>
 @use '../../../assets/styles/partials/variables' as *;
-:root{
-    --swiper-theme-color: $textGold;
-}
 .wrap {
     background-color: $bgVeryVeryLightGrey;
 
