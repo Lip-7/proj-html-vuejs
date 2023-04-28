@@ -5,13 +5,15 @@
         <h2>the best pizza menu in town</h2>
         <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.</p>
     </div>
-    <div class="pizzaCarusel pb-5 pt-5 mt-5 d-flex overflow-hidden justify-content-between">
+    <div class="pizzaCarusel pb-5 pt-5 mt-5 d-flex overflow-hidden justify-content-between" ref="pizzaSlider" @mousemove="dragging" @mousedown="() => this.isDragging = true">
         <SinglePizza v-for="item in store.main.pizzas" :pizza="item"/>
     </div>
+    <!-- <PizzaCarousel/> -->
   </div>
 </template>
   
 <script>
+import PizzaCarousel from './PizzaCarousel.vue';
 import { store } from '../../../store/store';
 import SinglePizza from './SinglePizza.vue';
 export default {
@@ -19,17 +21,26 @@ export default {
     data() {
         return {
             store,
+            isDragging: false,
         }
     },
     methods: {
-
+        dragging(e) {
+            console.log(e);
+            if (!this.isDragging) return;
+            this.$refs.pizzaSlider.scrollLeft -= e.movementX;
+        },
+        dragStop() {
+            this.isDragging = false;
+        },
     },
     props:[],
     components: {
         SinglePizza,
+        PizzaCarousel,
     },
     mounted() {
-
+        document.addEventListener('mouseup', this.dragStop)
     }
 }
 </script>
