@@ -5,6 +5,9 @@
                 <div class="col-12 col-sm-6 col-lg-3" v-for="company in store.main.clients">
                     <SingleClient :client="company"/>
                 </div>
+                <div class="col-12 col-sm-6 col-lg-3" v-for="company in store.main.clients">
+                    <SingleClient :client="company"/>
+                </div>
             </div>
         </div>
     </div>
