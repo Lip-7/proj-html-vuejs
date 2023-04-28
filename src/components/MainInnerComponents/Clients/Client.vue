@@ -2,8 +2,8 @@
     <div class="wrap my-3">
         <div class="container">
             <div class="row d-flex flex-nowrap overflow-hidden align-items-center" @mousemove="dragging" @mousedown="() => this.isDragging = true" ref="clientsSlider">
-                <div class="col-12 col-sm-6 col-lg-3" v-for="company in store.main.clients" ref="clientsList">
-                    <SingleClient :client="company" ref="clientsItems"/>
+                <div class="col-12 col-sm-6 col-lg-3" v-for="company in store.main.clients">
+                    <SingleClient :client="company"/>
                 </div>
             </div>
         </div>
@@ -36,7 +36,6 @@ export default {
     },
     mounted() {
         document.addEventListener('mouseup', this.dragStop)
-        console.log(this.$refs.clientsItems);
     }
 }
 </script>
