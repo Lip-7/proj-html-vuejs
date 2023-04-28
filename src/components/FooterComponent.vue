@@ -4,7 +4,7 @@
             <div class="leftSide w-50 d-flex justify-content-between position-relative flex-wrap">
                 <div class="locals">
                     <h5>Find our restaurants</h5>
-                    <LocationComponent v-for="line in store.footer.locals" :local="line"/>
+                    <LocationComponent v-for="line in store.footer.locals" :local="line" />
                 </div>
                 <div class="timeTables">
                     <h5>Working hours</h5>
@@ -32,10 +32,11 @@
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
-                    
+
                 </div>
                 <div class="donPeppe w-25">
-                    <h1 class="h3 text-uppercase text-white">THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.</h1>
+                    <h1 class="h3 text-uppercase text-white">THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL
+                        BAKED SLICE OF PIZZA.</h1>
                 </div>
                 <div class="copyright">
                     <p>© 2020 <span>Lip</span></p>
@@ -52,7 +53,7 @@
 </template>
   
 <script>
-import {store} from '../store/store'
+import { store } from '../store/store'
 import LocationComponent from './FooterzInnerComponents/LocationComponent.vue';
 export default {
     name: 'FooterComponent',
@@ -75,44 +76,54 @@ export default {
   
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-.wrapper{
+
+.wrapper {
     overflow: hidden;
     color: $textVeryLightGrey;
-    .leftSide{
+
+    .leftSide {
         background-image: url(/img/cielo2.jpg);
         padding: 120px 60px;
-        h5 , h6{
+
+        h5,
+        h6 {
             color: $textGold;
             text-transform: uppercase;
             margin-bottom: 0;
         }
-        .timeTables{
-            .lip_text-red{
+
+        .timeTables {
+            .lip_text-red {
                 color: $textRed;
             }
-            span{
+
+            span {
                 font-family: 'Open sans', sans-serif;
             }
-            .saturday{
-                h6{
-                    span{
+
+            .saturday {
+                h6 {
+                    span {
                         position: relative;
                         top: -5px;
                         right: -5px;
                     }
                 }
             }
-            .socials{
-                i{
+
+            .socials {
+                i {
                     color: $textWhite;
                     transition: all .5s;
-                    &:hover{
+
+                    &:hover {
                         color: $textDarkGold;
                     }
                 }
             }
         }
-        .copyright{
+
+        .copyright {
             color: $textGold;
             font-family: 'Open sans', sans-serif;
             font-size: .7rem;
@@ -120,15 +131,23 @@ export default {
             position: absolute;
             bottom: 50px;
             left: 60px;
-            span{
+
+            span {
                 color: $textGreen;
             }
         }
-        .certificate{
+
+        .certificate {
             position: absolute;
             bottom: 50px;
             right: 60px;
         }
     }
-}
-</style>
+
+    .rightSide {
+        img {
+            max-height: 850px;
+            object-fit: cover;
+        }
+    }
+}</style>

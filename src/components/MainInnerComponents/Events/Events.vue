@@ -63,7 +63,7 @@ export default {
     methods: {
 
     },
-    props:[],
+    props: [],
     components: {
 
     },
@@ -75,38 +75,51 @@ export default {
   
 <style lang="scss" scoped>
 @use '../../../assets/styles/partials/variables' as *;
-.wrap{
-    .leftSide{
+
+.wrap {
+    .leftSide {
         background-image: url('/img/cielo2.jpg');
-        .events{
+
+        .events {
             padding-top: 100px;
             text-transform: uppercase;
             color: white;
-            .tRed{
+
+            .tRed {
                 color: $textBordeaux;
             }
-            .tLiRed{
+
+            .tLiRed {
                 color: $textRed;
             }
-            .spaced{
+
+            .spaced {
                 letter-spacing: 3px;
             }
-            .sans{
+
+            .sans {
                 font-family: "Open sans", sans-serif;
             }
-            .dateInfo{
-                
-                &:hover .dateInfoAddress i{
+
+            .dateInfo {
+
+                &:hover .dateInfoAddress i {
                     transform: translateY(-4px);
                 }
-                .dateInfoAddress i{
+
+                .dateInfoAddress i {
                     transition: all .5s;
                 }
             }
-            .borded{
+
+            .borded {
                 border-bottom: 2px dotted $bgGold;
             }
         }
     }
-}
-</style>
+
+    .rightSide {
+        max-height: 850px;
+        object-fit: cover;
+    }
+}</style>

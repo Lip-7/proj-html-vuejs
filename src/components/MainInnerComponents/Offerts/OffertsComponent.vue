@@ -1,11 +1,11 @@
 <template>
     <div class="wrap d-flex row w-100">
-        <div class="image col-12 col-lg-6 position-relative">
+        <div class="image col-12 col-lg-6 position-relative p-0">
             <img class="over" src="/img/h1-img-7n.png" alt="Don Peppe Pizza Specials">
             <img class="back" src="/img/h1-img-4.jpg" alt="Don Peppe Clients">
         </div>
         <div class="offerts col-12 col-lg-6 d-flex justify-content-center align-items-center">
-            <div class="specials">
+            <div class="specials p-5">
                 <h2>Specials<span>*</span></h2>
                 <p class="subtext">Magnt a pizza bona, solo da noi puoi trovare queste speciali offerte.</p>
                 <div class="singleOffert d-flex mt-4">
