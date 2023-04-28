@@ -1,5 +1,5 @@
 <template>
-    <div class="wrap w-100 position-relative">
+    <div class="wrap w-100 position-relative overflow-hidden">
         <div class="backText">
             <img :src="activeOne.backText" alt="Peppe's Pizzas">
         </div>
