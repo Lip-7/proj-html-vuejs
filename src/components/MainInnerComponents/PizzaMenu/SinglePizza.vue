@@ -1,7 +1,7 @@
 <template>
     <div class="wrap text-center">
         <div class="imgWrap">
-            <img class=" w-100" :src="pizza.img" :alt="pizza.name">
+            <img draggable="false" class=" w-100" :src="pizza.img" :alt="pizza.name">
         </div>
         <h5 class="pizzaName mt-3">{{ pizza.name }}</h5>
         <h5 class="pizzaPrice">{{ pizza.price }}</h5>

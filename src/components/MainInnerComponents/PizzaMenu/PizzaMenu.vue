@@ -5,7 +5,7 @@
         <h2>the best pizza menu in town</h2>
         <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.</p>
     </div>
-    <div class="pizzaCarusel pb-5 pt-5 mt-5 d-flex overflow-hidden justify-content-between" ref="pizzaSlider" @mousemove="dragging" @mousedown="() => this.isDragging = true">
+    <div class="pizzaCarusel pb-5 pt-5 mt-5 d-flex overflow-hidden" ref="pizzaSlider" @mousemove="dragging" @mousedown="() => this.isDragging = true">
         <SinglePizza v-for="item in store.main.pizzas" :pizza="item"/>
     </div>
     <!-- <PizzaCarousel/> -->
@@ -73,9 +73,10 @@ export default {
         }
     }
     .pizzaCarusel{
-        width: 110%;
+        /* width: 110%;
         transform: translateX(-5%);
-        cursor: pointer;
+        cursor: pointer; */
+        gap: 7rem;
     }
 }
 </style>
