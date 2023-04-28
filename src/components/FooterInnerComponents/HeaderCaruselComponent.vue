@@ -6,12 +6,12 @@
         <div class="pizzaImg">
             <img :src="activeOne.pizzaImg" alt="Peppe's Pizzas">
         </div>
-       <!--  <div class="prevButton position-relative">
+        <div @click="changePizza('prev')" class="prevButton position-relative">
             <span>Prev</span>
         </div>
-        <div class="nextButton position-absolute">
+        <div @click="changePizza('next')" class="nextButton position-absolute">
             <span>Next</span>
-        </div> -->
+        </div>
     </div>
 </template>
   
@@ -23,10 +23,28 @@ export default {
         return {
             store,
             toView: "Urban",
+            pizzasList: ['Urban', 'Taste', 'Crust'],
         }
     },
     methods: {
-
+        changePizza(direction) {
+            let actualIndex = this.pizzasList.indexOf(this.toView);
+            let newToView;
+            if (direction == 'next') {
+                if (actualIndex < 2) {
+                    newToView = this.pizzasList[actualIndex + 1];
+                } else {
+                    newToView = this.pizzasList[0];
+                }
+            } else {
+                if (actualIndex == 0) {
+                    newToView = this.pizzasList[2];
+                } else {
+                    newToView = this.pizzasList[actualIndex - 1];
+                }
+            }
+            this.toView = newToView;
+        }
     },
     components: {
 
